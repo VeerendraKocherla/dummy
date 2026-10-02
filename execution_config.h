@@ -15,6 +15,10 @@ enum class ExecutionUnitKind {
   kAgu,
 };
 
+struct ExecutionUnitConfig {
+  std::uint32_t latency = 0;
+  std::uint32_t initiation_interval = 1;
+};
 
 const char* ExecutionUnitKindName(ExecutionUnitKind kind);
 
